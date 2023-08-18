@@ -7,3 +7,10 @@ function distanceFromHqInBlocks(pickUpLocation) {
         return hqLocation - pickUpLocation;
     }
 }
+
+function distanceFromHqInFeet(pickUpLocation) {
+    const blockLength = 264; // 1 block is 264 feet
+    const distanceInBlocks = distanceFromHqInBlocks(pickUpLocation);
+    
+    return distanceInBlocks * blockLength;
+}
