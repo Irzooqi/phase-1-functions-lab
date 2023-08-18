@@ -14,3 +14,10 @@ function distanceFromHqInFeet(pickUpLocation) {
     
     return distanceInBlocks * blockLength;
 }
+
+function distanceTravelledInFeet(start, destination) {
+    const blockLength = 264; // 1 block is 264 feet
+    const distanceInBlocks = Math.abs(destination - start);
+    
+    return distanceInBlocks * blockLength;
+}
