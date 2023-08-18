@@ -4,6 +4,6 @@ function distanceFromHqInBlocks(pickUpLocation) {
     if (pickUpLocation >= hqLocation) {
         return pickUpLocation - hqLocation;
     } else {
-        return hqLocation - pickUpLocation * -1;
+        return hqLocation - pickUpLocation;
     }
 }
